@@ -1,4 +1,4 @@
-### STS ###
+
 .apt_generated
 .classpath
 .factorypath
@@ -6,7 +6,6 @@
 .settings
 .springBeans
 
-### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
