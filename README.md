@@ -49,6 +49,12 @@ public class JavaBitSetTest {
 
 }
 ```
-Expected test result is :
-true
-false
+Expected test result is :</br>
+true</br>
+false</br>
+
+### License
+Bloomfilter is released under the [WTFPL](http://www.wtfpl.net/about/).</br>
+You can also read it in [Wikipedia](https://en.wikipedia.org/wiki/WTFPL).</br>
+![WTFPL](https://pic4.zhimg.com/80/v2-af35e227da8f252007164bd704f6c2d1_hd.jpg)
+
