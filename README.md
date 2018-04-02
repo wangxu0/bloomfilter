@@ -25,11 +25,11 @@ mvn clean install
 
 ```xml
 
-    <dependency>
-        <groupId>com.github.wxisme</groupId>
-        <artifactId>bloomfilter</artifactId>
-        <version>1.0.0</version>
-    </dependency>
+<dependency>
+    <groupId>com.github.wxisme</groupId>
+    <artifactId>bloomfilter</artifactId>
+    <version>1.0.0</version>
+</dependency>
 
 ```
 
