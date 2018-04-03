@@ -11,11 +11,7 @@ public class JavaBitSetTest {
         filter.add("filter");
         System.out.println(filter.contains("filter"));
         System.out.println(filter.contains("bloom"));
-        /**
-         * Test Result:
-         * true
-         * false
-         */
+
     }
 
 }
