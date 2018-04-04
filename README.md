@@ -145,7 +145,7 @@ false
 ```
 #### Extensions
 
-If you want to use your own data structure, you can directly implement the BaseBitSet interface.</br>
+If you want to use your own data structure, you can directly implement the `BaseBitSet` interface.</br>
 Example:</br>
 
 ```java
