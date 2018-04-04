@@ -29,15 +29,25 @@ public class RedisBitSet implements BaseBitSet {
 
     private boolean isCluster = true;
 
-    public RedisBitSet() {
+    private RedisBitSet() {
     }
 
+    /**
+     * Create a redis bitset.
+     * @param jedisCluster jedis cluster client.
+     * @param name the redis bit key name.
+     */
     public RedisBitSet(JedisCluster jedisCluster, String name) {
         this.jedisCluster = jedisCluster;
         this.name = name;
         this.isCluster = true;
     }
 
+    /**
+     * Create a redis bitset.
+     * @param jedis jedis client.
+     * @param name the redis bit key name.
+     */
     public RedisBitSet(Jedis jedis, String name) {
         this.jedis = jedis;
         this.name = name;
