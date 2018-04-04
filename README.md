@@ -79,7 +79,7 @@ false
 ### License
 
 Bloomfilter is released under the [GNU Lesser General Public License v3.0](http://www.gnu.org/licenses/).</br>
-You can just use maven to import dependency package or use your own compiled jar package.
+You can just use maven to import dependency package or use your own compiled jar package.</br>
 You may copy this code directly into your project if you leave the LGPL-comment in place and reference the following hyperlink:</br>
 https://github.com/MagnusS/Java-BloomFilter</br>
 https://github.com/wxisme/bloomfilter</br>
