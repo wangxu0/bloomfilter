@@ -39,17 +39,46 @@ mvn clean install
 public class JavaBitSetTest {
 
     public static void main(String[] args) {
-        BloomFilter<String> filter = new BloomFilter<String>(0.0001, 10000);//(false positive rate, Expected number of elements)
+        //(falsePositiveProbability, expectedNumberOfElements)
+        BloomFilter<String> filter = new BloomFilter<String>(0.0001, 10000);
         filter.bind(new JavaBitSet());
 
         filter.add("filter");
         System.out.println(filter.contains("filter"));
         System.out.println(filter.contains("bloom"));
+        filter.add("bitset");
+        filter.add("redis");
+        System.out.println(filter.contains("bitset"));
+        System.out.println(filter.contains("redis"));
+        System.out.println(filter.contains("mysql"));
+        System.out.println(filter.contains("linux"));
+        System.out.println(filter.count());
+        System.out.println(filter.isEmpty());
+        filter.clear();
+        System.out.println(filter.isEmpty());
+        System.out.println(filter.contains("filter"));
+
     }
 
 }
 ```
 Expected test result is :</br>
-true</br>
-false</br>
+```
+true
+false
+true
+true
+false
+false
+3
+false
+true
+false
+```
 
+### License
+
+Bloomfilter is released under the [GNU Lesser General Public License v3.0](http://www.gnu.org/licenses/).</br>
+You may copy this code directly into your project if you leave the LGPL-comment in place and reference the following hyperlink:</br>
+https://github.com/MagnusS/Java-BloomFilter</br>
+https://github.com/wxisme/bloomfilter</br>
