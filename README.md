@@ -93,7 +93,7 @@ public class RedisBitSetTest {
 
         //(falsePositiveProbability, expectedNumberOfElements)
         BloomFilter<String> filter = new BloomFilter<String>(0.0001, 10000);
-        Jedis jedis = new Jedis("10.128.35.127", 6379);
+        Jedis jedis = new Jedis("127.0.0.1", 6379);
         jedis.auth("1234");
         filter.bind(new RedisBitSet(jedis, "bloomfilter:key:name"));
 
