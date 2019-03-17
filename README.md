@@ -1,4 +1,5 @@
 # bloomfilter
+[![Build Status](https://travis-ci.org/wxisme/bloomfilter.svg?branch=master)](https://travis-ci.org/wxisme/bloomfilter)
 
 An empty Bloom filter is a bit array of m bits, all set to 0. There must also be hashNumber different hash functions defined, each of which maps or hashes some set element to one of the m array positions, generating a uniform random distribution. Typically, hashNumber is a constant, much smaller than m, which is proportional to the number of elements to be added; the precise choice of hashNumber and the constant of proportionality of m are determined by the intended false positive probability of the filter.</br>
 If you are not familiar with it, you can refer to [Wikipedia's detailed analysis](https://en.wikipedia.org/wiki/Bloom_filter).</br>
